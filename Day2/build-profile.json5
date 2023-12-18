@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/rickli/.ohos/config/auto_debug_Day2_com.example.pedometerapp_80086000158750853.cer",
+          "storePassword": "0000001AA4C35268502D3610808B11A54E1D2FCE9DF5366F45F88DFBE520BA4F9DFCAF29CD783AE8706E",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A0A1BCC588B07443B8522B25E6BAD68FF877C76E5635AA09B25770BB5E2CA157084196C95D228",
+          "profile": "/Users/rickli/.ohos/config/auto_debug_Day2_com.example.pedometerapp_80086000158750853.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/rickli/.ohos/config/auto_debug_Day2_com.example.pedometerapp_80086000158750853.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

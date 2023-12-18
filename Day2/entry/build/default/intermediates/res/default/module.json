@@ -1,0 +1,129 @@
+{
+    "app" : 
+    {
+        "apiReleaseType" : "Release",
+        "bundleName" : "com.example.pedometerapp",
+        "debug" : true,
+        "icon" : "$media:app_icon",
+        "iconId" : 16777217,
+        "label" : "$string:app_name",
+        "labelId" : 16777216,
+        "minAPIVersion" : 9,
+        "targetAPIVersion" : 9,
+        "vendor" : "example",
+        "versionCode" : 1000000,
+        "versionName" : "1.0.0"
+    },
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "backgroundModes" : 
+                [
+                    "location"
+                ],
+                "description" : "$string:EntryAbility_desc",
+                "descriptionId" : 16777218,
+                "exported" : true,
+                "icon" : "$media:icon",
+                "iconId" : 16777316,
+                "label" : "$string:EntryAbility_label",
+                "labelId" : 16777219,
+                "name" : "EntryAbility",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "srcEntry" : "./ets/entryability/EntryAbility.ets",
+                "startWindowBackground" : "$color:start_window_background",
+                "startWindowBackgroundId" : 16777241,
+                "startWindowIcon" : "$media:icon",
+                "startWindowIconId" : 16777316
+            }
+        ],
+        "compileMode" : "esmodule",
+        "deliveryWithInstall" : true,
+        "dependencies" : [],
+        "description" : "$string:module_desc",
+        "descriptionId" : 16777224,
+        "deviceTypes" : 
+        [
+            "phone",
+            "tablet"
+        ],
+        "installationFree" : false,
+        "mainElement" : "EntryAbility",
+        "name" : "entry",
+        "pages" : "$profile:main_pages",
+        "requestPermissions" : 
+        [
+            {
+                "name" : "ohos.permission.KEEP_BACKGROUND_RUNNING",
+                "usedScene" : 
+                {
+                    "abilities" : 
+                    [
+                        "EntryAbility"
+                    ],
+                    "when" : "inuse"
+                }
+            },
+            {
+                "name" : "ohos.permission.ACTIVITY_MOTION",
+                "usedScene" : 
+                {
+                    "abilities" : 
+                    [
+                        "EntryAbility"
+                    ],
+                    "when" : "inuse"
+                }
+            },
+            {
+                "name" : "ohos.permission.APPROXIMATELY_LOCATION",
+                "usedScene" : 
+                {
+                    "abilities" : 
+                    [
+                        "EntryAbility"
+                    ],
+                    "when" : "inuse"
+                }
+            },
+            {
+                "name" : "ohos.permission.LOCATION",
+                "usedScene" : 
+                {
+                    "abilities" : 
+                    [
+                        "EntryAbility"
+                    ],
+                    "when" : "inuse"
+                }
+            },
+            {
+                "name" : "ohos.permission.LOCATION_IN_BACKGROUND",
+                "usedScene" : 
+                {
+                    "abilities" : 
+                    [
+                        "EntryAbility"
+                    ],
+                    "when" : "inuse"
+                }
+            }
+        ],
+        "type" : "entry",
+        "virtualMachine" : "ark9.0.0.0"
+    }
+}
